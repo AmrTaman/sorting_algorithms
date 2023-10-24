@@ -6,24 +6,24 @@
  */
 void selection_sort(int *array, size_t size)
 {
-    size_t x, y, smallest, tmp;
+	size_t x, y, smallest, tmp;
 
-    if (array == NULL || size < 2)
-        return;
-    for (x = 0; x < size - 1; x++)
-    {
-        smallest = x;
-        for (y = x + 1; y < size; y++)
-        {
-            if (array[smallest] > array[y])
-                smallest = y;
-        }
-        if (smallest != x)
-        {
-            tmp = array[x];
-            array[x] = array[smallest];
-            array[smallest] = tmp;
-            print_array(array, size);
-        }
-    }
+	if (array == NULL || size < 2)
+		return;
+	for (x = 0; x < size - 1; x++)
+	{
+		smallest = x;
+		for (y = x + 1; y < size; y++)
+		{
+			if (array[smallest] > array[y])
+				smallest = y;
+		}
+		if (smallest != x)
+		{
+			tmp = array[x];
+			array[x] = array[smallest];
+			array[smallest] = tmp;
+			print_array(array, size);
+		}
+	}
 }
