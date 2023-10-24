@@ -2,7 +2,7 @@
 
 void swap(listint_t *cur, listint_t **list);
 /**
- * insertion_sort_list - insertion sort
+ * insertion_sort_list - insertion sort.
  * @list: list
  */
 void insertion_sort_list(listint_t **list)
