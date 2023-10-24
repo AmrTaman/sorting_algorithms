@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * partition - sorts with quick sort
+ * partition - sorts with quick sort.
  * @array: array
  * @start: starting point
  * @end: ending point
