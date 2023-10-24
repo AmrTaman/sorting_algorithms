@@ -1,6 +1,10 @@
 #include "sort.h"
 
 void swap(listint_t *cur, listint_t **list);
+/**
+ * insertion_sort_list - insertion sort
+ * @list: list
+ */
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *cur = (*list)->next;
@@ -32,6 +36,10 @@ void insertion_sort_list(listint_t **list)
 		}
 	}
 }
+/**
+ * swap - insertion sort
+ * @list: list
+ */
 void swap(listint_t *cur, listint_t **list)
 {
 	listint_t *tmp;
