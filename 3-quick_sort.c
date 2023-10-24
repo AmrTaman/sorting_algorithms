@@ -11,7 +11,7 @@ void partition(int *array, int start, int end, int size)
 	int current_idx = start, swap_marker = start - 1, pivot = end, tmp;
 
 	if (start == end)
-		return; 
+		return;
 	while (current_idx <= pivot)
 	{
 		if (array[current_idx] > array[pivot])
@@ -40,7 +40,6 @@ void partition(int *array, int start, int end, int size)
 			}
 		}
 	}
-	
 }
 
 /**
