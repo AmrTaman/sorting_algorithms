@@ -7,12 +7,14 @@ void swap(listint_t *cur, listint_t **list);
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *cur = (*list)->next;
-	listint_t *mar = cur;
+	listint_t *cur;
+	listint_t *mar;
 	int count = 1;
 
-	if (list == NULL || (*list) == NULL || (*list)->next == NULL)
+	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
+	cur = (*list)->next;
+	mar = cur;
 	while (count)
 	{
 		count = 0;
