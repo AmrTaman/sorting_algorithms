@@ -1,5 +1,11 @@
 #include "sort.h"
-
+/**
+ * partition - sorts with quick sort
+ * @array: array
+ * @start: starting point
+ * @end: ending point
+ * @size: size of array
+ */
 void partition(int *array, int start, int end, int size)
 {
 	int current_idx = start, swap_marker = start - 1, pivot = end, tmp;
