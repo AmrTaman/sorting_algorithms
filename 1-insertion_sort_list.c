@@ -39,6 +39,7 @@ void insertion_sort_list(listint_t **list)
 /**
  * swap - insertion sort
  * @list: list
+ * @cur: current
  */
 void swap(listint_t *cur, listint_t **list)
 {
