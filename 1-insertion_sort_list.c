@@ -56,7 +56,6 @@ void swap(listint_t *cur, listint_t **list)
 	}
 	else if (cur->prev->prev == NULL && cur->next != NULL)
 	{
-		print_list(cur->prev);
 		tmp = cur->prev;
 		tmp->next = cur->next;
 		cur->next->prev = tmp;
