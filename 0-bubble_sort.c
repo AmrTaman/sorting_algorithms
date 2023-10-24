@@ -1,4 +1,4 @@
-#include"sort."
+#include"sort.h"
 /**
  * bubble_sort - sorts with bubble algorithm
  * @array: array if integers
