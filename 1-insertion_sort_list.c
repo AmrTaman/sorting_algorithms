@@ -35,6 +35,7 @@ void insertion_sort_list(listint_t **list)
 void swap(listint_t *cur, listint_t **list)
 {
 	listint_t *tmp;
+
 	if (cur->prev->prev == NULL && cur->next == NULL)
 	{
 		tmp = cur->prev;
