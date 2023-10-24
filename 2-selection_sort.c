@@ -10,7 +10,7 @@ void selection_sort(int *array, size_t size)
 
     if (array == NULL || size < 2)
         return;
-    for (x = 0; x < size; x++)
+    for (x = 0; x < size - 1; x++)
     {
         smallest = x;
         for (y = x + 1; y < size; y++)
@@ -18,9 +18,12 @@ void selection_sort(int *array, size_t size)
             if (array[smallest] > array[y])
                 smallest = y;
         }
-        tmp = array[x];
-        array[x] = array[smallest];
-        array[smallest] = tmp;
-        print_array(array, size);
+        if (smallest != x)
+        {
+            tmp = array[x];
+            array[x] = array[smallest];
+            array[smallest] = tmp;
+            print_array(array, size);
+        }
     }
 }
